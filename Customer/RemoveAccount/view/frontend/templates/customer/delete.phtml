@@ -1,0 +1,17 @@
+<script>
+    function ConfirmDelete()
+    {
+        var x = confirm("Are you sure you want to delete?");
+        if (x)
+            return true;
+        else
+            return false;
+    }
+</script>
+<p>
+    Remember before delete customer , all information regarding that customer will delete for permanent
+    and it will not recover any how.
+</p>
+<form action="<?php echo $block->getBaseUrl()?>removeaccount/index/remove" method="post">
+    <button class="action primary" onclick="return ConfirmDelete();" type="submit" name="actiondelete" value="1">Delete Customer</button>
+</form>

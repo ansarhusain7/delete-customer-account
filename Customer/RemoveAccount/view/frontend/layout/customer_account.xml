@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Ansar Husain
+ * Customer_RemoveAccount.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="customer_account_navigation">
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="delete-customer">
+
+                <arguments>
+                        <argument name="path" xsi:type="string">removeaccount\index\delete</argument>
+                        <argument name="label" xsi:type="string">Delete Account</argument>
+                </arguments>
+
+            </block>
+        </referenceBlock>
+    </body>
+</page>
